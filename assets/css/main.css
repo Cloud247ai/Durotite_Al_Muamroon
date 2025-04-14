@@ -1883,7 +1883,7 @@ section {
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.59);
   position: absolute;
   inset: 0;
 }
@@ -1976,7 +1976,7 @@ section {
   background: none;
   font-size: 26px;
   line-height: 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.147);
   color: rgba(255, 255, 255, 0.6);
   border-radius: 50px;
   width: 54px;
@@ -2589,7 +2589,7 @@ section {
 
 .footer:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.541);
   position: absolute;
   inset: 0;
 }

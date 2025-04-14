@@ -11,7 +11,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="shortcut icon">
+  <link href="assets/img/logo_1.png" rel="shortcut icon">
 
   <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
@@ -33,6 +33,15 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    @media (max-width: 768px) {
+      .header-logo {
+        margin-bottom: 20px; /* Adds space below the logo */
+      }
+    }
+    
+  </style>
+
   
 </head>
 
@@ -42,29 +51,32 @@
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="Al Muamroon Trading Est" style="height: 170px;">
+      <!-- Updated Logo: Adjusted size for visibility -->
+      <a href="index.html" class="logo d-flex align-items-center header-logo">
+
+        <img src="assets/img/logo.png" alt="Al Muamroon Trading Est"
+            style="height: 65px; width: auto; max-height: 65px;">
       </a>
 
+      <!-- Mobile Nav Toggles -->
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
+      <!-- Navigation -->
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="#">Who We Are</a></li>
           <li><a href="#">Our Services</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="#">Supplies</a></li>
-          
+          <!-- <li><a href="#">Supplies</a></li>
           <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="#">Certifications</a></li>
               <li><a href="#">Careers</a></li>
               <li><a href="#">Clients</a></li>
             </ul>
-          </li>
-
+          </li> -->
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -72,6 +84,8 @@
     </div>
   </header>
   <!-- End Header -->
+
+
 
 
   <!-- ======= Hero Section ======= -->
@@ -83,7 +97,7 @@
           <div class="text-center col-lg-8">
             <h2 data-aos="fade-down">Welcome to <span>Al Muamroon Trading Est</span></h2>
             <p data-aos="fade-up">
-              With over 25 years of excellence in Saudi Arabia, Al Muamroon Trading Est delivers high-quality contracting, electro-mechanical works, and logistics solutions—trusted by major defense, government, and industrial sectors.
+              With 25+ years in Saudi Arabia, Al Muamroon Trading Est delivers trusted solutions in contracting, electro-mechanical works, and logistics across defense, government, and industry.
             </p>
             <a data-aos="fade-up" data-aos-delay="200" href="services.html" class="btn-get-started">Explore Our Services</a>
           </div>
@@ -721,94 +735,7 @@
 
 
 
-    <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-blog-posts" class="recent-blog-posts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Latest News & Updates</h2>
-          <p>Stay informed on our newest projects, certifications, and supply chain milestones across the Kingdom of Saudi Arabia.</p>
-        </div>
-
-        <div class="row gy-5">
-
-          <!-- Blog Post 1 -->
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="post-item position-relative h-100">
-              <div class="overflow-hidden post-img position-relative">
-                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
-                <span class="post-date">March 14</span>
-              </div>
-              <div class="post-content d-flex flex-column">
-                <h3 class="post-title">Al Muamroon Completes Prefab Housing Project in Yanbu</h3>
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Projects Team</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Construction</span>
-                  </div>
-                </div>
-                <hr>
-                <a href="#" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End post item -->
-
-          <!-- Blog Post 2 -->
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="post-item position-relative h-100">
-              <div class="overflow-hidden post-img position-relative">
-                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
-                <span class="post-date">February 22</span>
-              </div>
-              <div class="post-content d-flex flex-column">
-                <h3 class="post-title">ISO Certifications Renewed: 9001, 14001 & 45001</h3>
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Quality Team</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Certifications</span>
-                  </div>
-                </div>
-                <hr>
-                <a href="#" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End post item -->
-
-          <!-- Blog Post 3 -->
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="post-item position-relative h-100">
-              <div class="overflow-hidden post-img position-relative">
-                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
-                <span class="post-date">January 10</span>
-              </div>
-              <div class="post-content d-flex flex-column">
-                <h3 class="post-title">Durotite Fasteners Now Available in Bulk Across KSA</h3>
-                <div class="meta d-flex align-items-center">
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">Supply Chain</span>
-                  </div>
-                  <span class="px-3 text-black-50">/</span>
-                  <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Products</span>
-                  </div>
-                </div>
-                <hr>
-                <a href="#" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-              </div>
-            </div>
-          </div><!-- End post item -->
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Recent Blog Posts Section -->
+   
 
 
 
