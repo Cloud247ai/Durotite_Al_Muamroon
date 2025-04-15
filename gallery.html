@@ -39,6 +39,29 @@
         margin-bottom: 20px; /* Adds space below the logo */
       }
     }
+
+    .gallery-item {
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+      transform: scale(1.02);
+    }
+    
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-align: center;
+    }
+    
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+    
     
   </style>
 
@@ -68,8 +91,8 @@
           <li><a href="index.html" >Home</a></li>
           <li><a href="about.html">Who We Are</a></li>
           <li><a href="services.html">Our Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="projects.html" >Projects</a></li>
           <!-- <li><a href="#">Supplies</a></li>
           <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -92,121 +115,95 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-        <h2>Projects</h2>
+        <h2>Gallery</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Projects</li>
+          <li>Gallery</li>
         </ol>
 
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Our Projects Section ======= -->
-    <section id="projects" class="projects">
+    <!-- ======= Our Projects Gallery Section ======= -->
+    <section id="projects" class="projects-gallery section-bg">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>Our Projects</h2>
-          <p>Al Muamroon Trading Est has successfully executed numerous projects across the Kingdom — including construction, prefabricated buildings, heavy equipment delivery, industrial supplies, and mission-critical services.</p>
+        <div class="mb-5 text-center section-header">
+          <h2>Gallery Highlights</h2>
+          <p>Explore our portfolio showcasing infrastructure, prefabrication, logistics, and supply excellence across Saudi Arabia.</p>
         </div>
 
-        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+        <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
 
-          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-construction">Construction</li>
-            <li data-filter=".filter-prefab">Prefabricated Buildings</li>
-            <li data-filter=".filter-equipment">Heavy Equipment</li>
-            <li data-filter=".filter-supplies">Supplies & Logistics</li>
-          </ul><!-- End Projects Filters -->
-
-          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-            <!-- Project 1 -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Warehouse & Steel Building Construction</h4>
-                  <p>Turnkey development of steel-framed warehouses with integrated utility systems.</p>
-                  <a href="assets/img/projects/construction-1.jpg" data-gallery="portfolio-gallery-construction" class="glightbox preview-link" title="Warehouse Project"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" class="details-link" title="More Details"><i class="bi bi-link-45deg"></i></a>
-                </div>
+          <!-- Gallery Item -->
+          <div class="col-lg-4 col-md-6">
+            <div class="overflow-hidden rounded shadow gallery-item position-relative">
+              <img src="assets/img/projects/construction-3.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+                <h5 class="text-white">Steel Warehouse</h5>
+                <a href="assets/img/projects/construction-3.jpg" class="glightbox stretched-link" title="Steel Warehouse"><i class="text-white bi bi-arrows-fullscreen fs-3"></i></a>
               </div>
             </div>
+          </div>
 
-            <!-- Project 2 -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-prefab">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Portable Site Offices & Clinics</h4>
-                  <p>Prefabricated and modular buildings supplied and installed in remote sites.</p>
-                  <a href="assets/img/projects/construction-2.jpg" data-gallery="portfolio-gallery-prefab" class="glightbox preview-link" title="Prefab Site Units"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" class="details-link" title="More Details"><i class="bi bi-link-45deg"></i></a>
-                </div>
+          <!-- Gallery Item -->
+          <div class="col-lg-4 col-md-6">
+            <div class="overflow-hidden rounded shadow gallery-item position-relative">
+              <img src="assets/img/projects/construction-2.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+                <h5 class="text-white">Modular Clinics</h5>
+                <a href="assets/img/projects/construction-2.jpg" class="glightbox stretched-link" title="Modular Clinics"><i class="text-white bi bi-arrows-fullscreen fs-3"></i></a>
               </div>
             </div>
+          </div>
 
-            <!-- Project 3 -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-equipment">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/repairs-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Heavy Equipment & Vehicle Supply</h4>
-                  <p>Deployment of dump trucks, trailers, and specialized machinery for site ops.</p>
-                  <a href="assets/img/projects/repairs-1.jpg" data-gallery="portfolio-gallery-equipment" class="glightbox preview-link" title="Heavy Equipment Supply"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" class="details-link" title="More Details"><i class="bi bi-link-45deg"></i></a>
-                </div>
+          <!-- Gallery Item -->
+          <div class="col-lg-4 col-md-6">
+            <div class="overflow-hidden rounded shadow gallery-item position-relative">
+              <img src="assets/img/projects/repairs-1.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+                <h5 class="text-white">Equipment Delivery</h5>
+                <a href="assets/img/projects/repairs-1.jpg" class="glightbox stretched-link" title="Equipment Delivery"><i class="text-white bi bi-arrows-fullscreen fs-3"></i></a>
               </div>
             </div>
+          </div>
 
-            <!-- Project 4 -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-supplies">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/design-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>POL Items & Tool Supply</h4>
-                  <p>Delivery of fasteners, power tools, cleaning items, and branded consumables.</p>
-                  <a href="assets/img/projects/design-1.jpg" data-gallery="portfolio-gallery-supplies" class="glightbox preview-link" title="Industrial Supplies"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" class="details-link" title="More Details"><i class="bi bi-link-45deg"></i></a>
-                </div>
+          <!-- Add more gallery items below -->
+          <div class="col-lg-4 col-md-6">
+            <div class="overflow-hidden rounded shadow gallery-item position-relative">
+              <img src="assets/img/projects/design-1.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+                <h5 class="text-white">Tool Supply</h5>
+                <a href="assets/img/projects/design-1.jpg" class="glightbox stretched-link" title="Tool Supply"><i class="text-white bi bi-arrows-fullscreen fs-3"></i></a>
               </div>
             </div>
+          </div>
 
-            <!-- Project 5 -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-prefab">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/remodeling-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>DFAC & Ablution Unit Installation</h4>
-                  <p>Design, transport, and installation of dining facilities and sanitation units.</p>
-                  <a href="assets/img/projects/remodeling-2.jpg" data-gallery="portfolio-gallery-prefab" class="glightbox preview-link" title="DFAC Unit"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" class="details-link" title="More Details"><i class="bi bi-link-45deg"></i></a>
-                </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="overflow-hidden rounded shadow gallery-item position-relative">
+              <img src="assets/img/projects/remodeling-2.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+                <h5 class="text-white">DFAC Units</h5>
+                <a href="assets/img/projects/remodeling-2.jpg" class="glightbox stretched-link" title="DFAC Units"><i class="text-white bi bi-arrows-fullscreen fs-3"></i></a>
               </div>
             </div>
+          </div>
 
-            <!-- Project 6 -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-supplies">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/design-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Grainger & MacMaster Stock Supply</h4>
-                  <p>Direct supply of lab safety items, power tools, and repair kits from leading brands.</p>
-                  <a href="assets/img/projects/design-2.jpg" data-gallery="portfolio-gallery-supplies" class="glightbox preview-link" title="Branded Stock Supply"><i class="bi bi-zoom-in"></i></a>
-                  <a href="#" class="details-link" title="More Details"><i class="bi bi-link-45deg"></i></a>
-                </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="overflow-hidden rounded shadow gallery-item position-relative">
+              <img src="assets/img/projects/design-2.jpg" class="img-fluid" alt="">
+              <div class="gallery-overlay d-flex flex-column justify-content-center align-items-center">
+                <h5 class="text-white">Branded Supplies</h5>
+                <a href="assets/img/projects/design-2.jpg" class="glightbox stretched-link" title="Branded Supplies"><i class="text-white bi bi-arrows-fullscreen fs-3"></i></a>
               </div>
             </div>
-
-          </div><!-- End Projects Container -->
+          </div>
 
         </div>
 
       </div>
     </section>
-    <!-- End Our Projects Section -->
+
 
 
 
